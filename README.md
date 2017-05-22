@@ -21,3 +21,7 @@ However, a number of operational modalities need to be released to the market by
 | FCMB | 214 | SpringBank | 084 | Unity Bank | 215 | 
 
 To get more info and understand the algorith better, [checkout this link](https://www.cbn.gov.ng/OUT/2011/CIRCULARS/BSPD/NUBAN%20PROPOSALS%20V%200%204-%2003%2009%202010.PDF)
+
+## Awesome Contributors
+- [Ifeoluwa](https://github.com/iifeoluwa)
+- [Gbolahan Allen](https://github.com/allengblack)
