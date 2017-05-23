@@ -25,3 +25,8 @@ To get more info and understand the algorith better, [checkout this link](https:
 ## Awesome Contributors
 - [Ifeoluwa](https://github.com/iifeoluwa) - PHP
 - [Gbolahan Allen](https://github.com/allengblack) - Python
+- [Oyewale Ademola](https://github.com/saopayne) - Groovy and Golang
+- [Patrick Foh Jr](https://github.com/mrfoh) - Javascript
+- [Chizzy Alaedu](https://github.com/tenorz007) - Golang
+- [Uk](https://github.com/ukchukx) - Elixir, Java and Python
+
