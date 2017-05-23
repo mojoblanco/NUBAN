@@ -6,7 +6,36 @@ import (
     "os"
     "strings"
     "strconv"
+    "log"
 )
+
+var banks = map[string]string{
+	"044": "Access Bank",
+	"014": "Afribank",
+	"023": "Citibank",
+	"063": "Diamond Bank",
+	"050": "Ecobank",
+	"040": "Equitorial Trust Bank",
+	"011": "First Bank",
+	"214": "FCMB",
+	"070": "FinBank",
+	"058": "Guarantee Trust Bank",
+	"069": "Intercontinentl Bank",
+	"056": "Oceanic Bank",
+	"082": "BankPhb",
+	"076": "Skye Bank",
+	"084": "SpringBank",
+	"221": "StanbicIBTC",
+	"068": "Standard Chartered Bank",
+	"232": "Sterling Bank",
+	"033": "United Bank For Africa",
+	"032": "Union Bank",
+	"035": "Wema Bank",
+	"057": "Zenith Bank",
+	"215": "Unity Bank",
+}
+
+var algo = [12]int{3, 7, 3, 3, 7, 3, 3, 7, 3, 3, 7, 3}
 
 func main() {
 	fmt.Println("Hello there")
@@ -24,7 +53,6 @@ func main() {
 	}else{
 		response = "The account number is Invalid"
 	}
-
     println(response)
 }
 
@@ -36,18 +64,18 @@ func validate_nuban_account(bankCode string, accountNumber string) bool {
             checkDigit, err := strconv.Atoi(accountNumber[:8])
 		    if err != nil {
 		        // account number cannot be parsed to integer
-		        fmt.Println(err)
-		        os.Exit(2)
+		        log.Fatal("Error: must be a number")
 		    }
 		    nubanArray := make([]int, len(nuban))
 		    for i := 0; i < len(nuban); i++ {
 		    	str := convert(nuban[i])
 		    	nubanArray[i], err = strconv.Atoi(str)
 		    }
-            fmt.Println(len(nubanArray))
-            nubanSum := (nubanArray[0] * 3) + (nubanArray[1] * 7) + (nubanArray[2] * 3) + (nubanArray[3] * 3) +
-                    (nubanArray[4] * 7) + (nubanArray[5] * 3) + (nubanArray[6] * 3) + (nubanArray[7] * 7) +
-                    (nubanArray[8] * 3) + (nubanArray[9] * 3) + (nubanArray[10] * 7) + (nubanArray[11] * 3)
+		    nubanSum := 0
+
+            for i := 0; i < 12; i++ {
+				nubanSum += (nubanArray[i] * algo[i])
+			}
             calCheckDigit := 10 - (nubanSum % 10)
 
             if(checkDigit != 10){
