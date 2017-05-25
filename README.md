@@ -29,4 +29,6 @@ To get more info and understand the algorith better, [checkout this link](https:
 - [Patrick Foh Jr](https://github.com/mrfoh) - Javascript
 - [Chizzy Alaedu](https://github.com/tenorz007) - Golang
 - [Uk](https://github.com/ukchukx) - Elixir, Java and Python
+- [Tochukwu Nkemdilim](Nagato23) - C
+
 
