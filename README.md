@@ -20,7 +20,7 @@ However, a number of operational modalities need to be released to the market by
 | First Bank | 011 | Skye Bank | 076 | Zenith Bank | 057 | 
 | FCMB | 214 | SpringBank | 084 | Unity Bank | 215 | 
 
-To get more info and understand the algorith better, [checkout this link](https://www.cbn.gov.ng/OUT/2011/CIRCULARS/BSPD/NUBAN%20PROPOSALS%20V%200%204-%2003%2009%202010.PDF)
+To get more info and understand the algorithm better, [checkout this link](https://www.cbn.gov.ng/OUT/2011/CIRCULARS/BSPD/NUBAN%20PROPOSALS%20V%200%204-%2003%2009%202010.PDF)
 
 ## Awesome Contributors
 - [Ifeoluwa](https://github.com/iifeoluwa) - PHP
