@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+#include <stdbool.h>
 
 bool Validate(char* accessCode, char* serialNo, int assumedCheckDigit)
 {
@@ -35,10 +35,10 @@ int main()
 
 	//collect input from user
 	printf("Enter the Bank Access Code\n");
-	scanf("%s", &accessCode);
+	scanf("%3s", accessCode);
 
 	printf("Enter the NUBAN Serial number\n");
-	scanf("%s", &serialNo);
+	scanf("%9s", serialNo);
 
 	printf("Enter the Check digit\n");
 	scanf("%i", &checkDigit);
