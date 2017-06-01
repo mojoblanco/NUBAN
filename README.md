@@ -31,6 +31,7 @@ To get more info and understand the algorithm better, [checkout this link](https
 - [Uk](https://github.com/ukchukx) - Elixir, Java and Python
 - [Ezinwa Okpoechi](https://github.com/BrainMaestro) - C++
 - [Tochukwu Nkemdilim](https://github.com/Nagato23) - C
+- [Tosin Onikute](https://github.com/tosinonikute) - Kotlin 
 
 
 
