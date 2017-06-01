@@ -32,6 +32,7 @@ To get more info and understand the algorithm better, [checkout this link](https
 - [Ezinwa Okpoechi](https://github.com/BrainMaestro) - C++
 - [Tochukwu Nkemdilim](https://github.com/Nagato23) - C
 - [Tosin Onikute](https://github.com/tosinonikute) - Kotlin 
+- [Ibanga Enoobong Ime](https://github.com/EnoIme) - English :smile:
 
 
 
