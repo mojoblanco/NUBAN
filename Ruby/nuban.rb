@@ -1,4 +1,4 @@
-# A class that check if NUBAN is valid per CBN rules
+# A class that checks if NUBAN is valid per CBN rules
 class Nuban
   MULTIPLICANTS = [3, 7, 3].cycle
 
@@ -12,12 +12,10 @@ class Nuban
   end
 
   def valid?
-    check_digit.eql?(calculate_check_digit)
+    check_digit.eql?(number[-1].to_i)
   end
 
-  private
-
-  def calculate_check_digit
+  def check_digit
     step_one =
       (bank_code + serial)
       .split('')
@@ -34,10 +32,6 @@ class Nuban
   def serial
     number[0..-2]
   end
-
-  def check_digit
-    number[-1].to_i
-  end
 end
 
-p Nuban.new('0000014579', '011').valid?
+# p Nuban.new('0000014579', '011').valid?
