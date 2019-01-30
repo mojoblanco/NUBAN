@@ -33,6 +33,7 @@ To get more info and understand the algorithm better, [checkout this link](https
 - [Tochukwu Nkemdilim](https://github.com/Nagato23) - C
 - [Tosin Onikute](https://github.com/tosinonikute) - Kotlin 
 - [Ibanga Enoobong Ime](https://github.com/EnoIme) - English :smile:
+- [Abdulmajid Hamza](https://github.com/skaex) - Ruby
 
 
 
