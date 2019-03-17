@@ -41,14 +41,15 @@ fn is_valid(args: &[String]) -> Result<bool, bool> {
     }
 
     let check_digit = account_number.pop().unwrap();
+    let mut numbers = String::new();
+    numbers.push_str(&bank_code);
+    numbers.push_str(&account_number);
+    let number_ints = numbers.chars().map(|num| num.to_digit(10).unwrap());
 
-    let mut number = String::new();
-    number.push_str(&bank_code);
-    number.push_str(&account_number);
-
+    let multipliers = vec![3, 7, 3, 3, 7, 3, 3, 7, 3, 3, 7, 3];
     let mut check_sum = 0;
-    for num in number.chars() {
-        check_sum += num.to_digit(10).expect("Invalid digit!");
+    for (idx, num) in number_ints.enumerate() {
+        check_sum += num * multipliers[idx];
     }
 
     let mut r_check_digit = 10 - (check_sum % 10);
