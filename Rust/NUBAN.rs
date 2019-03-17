@@ -33,6 +33,8 @@ fn main() {
 }
 
 fn is_valid(args: &[String]) -> Result<bool, bool> {
+    if args.len() < 3 { panic!("Invalid arguments, please check your input"); }
+
     let bank_code = args[1].clone();
     let mut account_number = args[2].clone();
 
