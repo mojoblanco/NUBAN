@@ -34,6 +34,7 @@ To get more info and understand the algorithm better, [checkout this link](https
 - [Tosin Onikute](https://github.com/tosinonikute) - Kotlin 
 - [Ibanga Enoobong Ime](https://github.com/EnoIme) - English :smile:
 - [Abdulmajid Hamza](https://github.com/skaex) - Ruby
+- [Timothy Onyiuke](https://github.com/timolinn) - Rust
 
 
 
