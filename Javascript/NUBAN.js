@@ -8,8 +8,8 @@ NUBAN.prototype.validate = function() {
     if(typeof this.bankCode !== 'string' || typeof this.accountNumber !== 'string')
         throw new Error('bankCode and accountNumber must be strings');
     
-    if(this.bankCode.length !== 3 && this.accountNumber.length !== 10)
-        throw new Error('Invalid bankCode and accountNumber');
+    if(this.bankCode.length !== 3 || this.accountNumber.length !== 10)
+        throw new Error('Invalid bankCode or accountNumber');
 
     var checkDigit = this.accountNumber.charAt(9);
     var dictionary = [3, 7, 3, 3, 7, 3, 3, 7, 3, 3, 7, 3];
