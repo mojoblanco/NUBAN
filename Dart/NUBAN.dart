@@ -35,9 +35,11 @@ class NUBAN {
 
     String fullAccountNumber = bankCode + accountNumber;
 
-    var acctNumbers = fullAccountNumber.codeUnits;
-    int sum = 0;
+    List<int> acctNumbers = fullAccountNumber.codeUnits.map((unit) {
+      return unit - '0'.codeUnitAt(0);
+    }).toList();
 
+    int sum = 0;
     for (int i = 0; i < acctNumbers.length - 1; i++) {
       sum += acctNumbers[i] * algo[i];
     }
