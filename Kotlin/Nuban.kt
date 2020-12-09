@@ -22,8 +22,8 @@ class NubanValidator {
         require(accountNumber.length == 10) { "Account number must be 10 digits long" }
 
         val formattedBankCode = when (bankCode.length) {
-            3 -> "000$bankCode"
-            5 -> "9$bankCode"
+            DMB_BANK_CODE_LENGTH -> "000$bankCode"
+            OFI_BANK_CODE_LENGTH -> "9$bankCode"
             else -> throw IllegalArgumentException("Bank code must be 3 or 5 digits")
         }
 
